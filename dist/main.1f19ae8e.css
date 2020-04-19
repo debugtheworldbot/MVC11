@@ -1,0 +1,91 @@
+body {
+  overflow: hidden;
+}
+body > .page {
+  display: flex;
+  flex-wrap: wrap;
+}
+body > .page > section {
+  width: 50vw;
+  height: 50vh;
+  border: 1px solid grey;
+}
+
+#app1 {
+}
+#app1 .output {
+}
+#app1 .actions {
+}
+
+#app2 {
+}
+#app2 .tabBar {
+  display: flex;
+}
+#app2 .tabBar > li {
+  width: 50%;
+}
+#app2 .tabBar > li.selected {
+  background: yellow;
+  color: green;
+}
+
+#app2 .tabContent {
+}
+#app2 .tabContent > li {
+  display: none;
+}
+#app2 .tabContent > li.active {
+  display: block;
+}
+
+#app3 {
+}
+#app3 .square {
+  border: 1px solid red;
+  margin-top: 10vw;
+  margin-left: 10vw;
+  width: 10vw;
+  height: 10vw;
+  transition: ease 1s;
+}
+#app3 .square.active {
+  transform: translateX(15vw);
+}
+
+@keyframes change {
+  0% {
+    background: red;
+  }
+  100% {
+    background: green;
+  }
+}
+#app4 .circle {
+  width: 20vw;
+  height: 20vw;
+  margin-left: 10vw;
+  border-radius: 50%;
+  border: 1px solid red;
+}
+#app4 .circle.active {
+  animation: change 1s infinite alternate linear;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+ol,
+li {
+  list-style: none;
+}
+
+
+/*# sourceMappingURL=/main.1f19ae8e.css.map */
